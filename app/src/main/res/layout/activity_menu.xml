@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Menu">
+    <LinearLayout
+        android:id="@+id/linearLayoutTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:background="#5A05EF"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Seminario"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTitulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/ma1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Maqueta 1"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/ma3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Maqueta 3"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/ma4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Maqueta 4"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/ma5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Maqueta 5"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/ejercicio1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ejercicio 1"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/ejercicio2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ejercicio 2"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/ejercicio3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ejercicio 3"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/ejercicio4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ejercicio 4"
+            android:textStyle="bold"/>
+        
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
